@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+    <!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    :root[data-theme='light'] {
+        --bg: #f4f4f4;
+        --card: #ffffff;
+        --text: #1a1a1a;
+    }
+    :root[data-theme='dark'] {
+        --bg: #0d1117;
+        --card: #161b22;
+        --text: #e6edf3;
+    }
+    body {
+        background: var(--bg);
+        color: var(--text);
+    }
+    .card {
+        background: var(--card);
+    }
+</style>
+
+<script src="assets/script.js" defer></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nanoyayay | Projects</title>
@@ -31,20 +56,13 @@
     <h2 class="text-3xl font-bold mb-8 text-center">My Projects</h2>
 
     <div class="grid md:grid-cols-2 gap-6">
-        <!-- EXAMPLE PROJECT -->
         <div class="card p-5 rounded shadow">
-            <h3 class="font-bold text-xl">Project Name</h3>
-            <p class="mt-2 mb-4">Short description of your project.</p>
-            <a href="https://github.com/Nanoyayay" target="_blank"
+            <h3 class="font-bold text-xl">random projects</h3>
+            <p class="mt-2 mb-4">take it idc just dont distribute</p>
+            <a href="https://github.com/Nanoyayay/random-projects" target="_blank"
                class="text-blue-600 hover:underline">View on GitHub →</a>
         </div>
 
-        <!-- Duplicate these for more projects -->
-        <div class="card p-5 rounded shadow">
-            <h3 class="font-bold text-xl">Another Project</h3>
-            <p class="mt-2 mb-4">Another description goes here.</p>
-            <a href="https://github.com/Nanoyayay" target="_blank"
-               class="text-blue-600 hover:underline">View on GitHub →</a>
         </div>
     </div>
 </div>
