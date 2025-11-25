@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanoyayay | About</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root[data-theme='light'] { --bg:#f4f4f4; --card:#fff; --text:#1a1a1a; }
+        :root[data-theme='dark'] { --bg:#0d1117; --card:#161b22; --text:#e6edf3; }
+        body { background:var(--bg); color:var(--text); }
+        .card { background:var(--card); }
+    </style>
+    <script src="assets/script.js" defer></script>
+</head>
+<body class="font-sans">
+
+<nav class="p-4 flex justify-between card shadow">
+    <div class="font-bold text-xl">Nanoyayay</div>
+    <div class="flex gap-6">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="about.html" class="hover:underline font-bold">About</a>
+        <button onclick="toggleTheme()" class="px-2 border rounded">🌓</button>
+    </div>
+</nav>
+
+<div class="max-w-3xl mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+
+    <div class="card p-6 rounded shadow leading-relaxed">
+        <p>
+            Hi, I’m <strong>Nanoyayay</strong> — developer, tinkerer, and someone who
+            learns by building (and sometimes breaking) stuff.
+        </p>
+
+        <p class="mt-4">
+            You can check out my GitHub:
+        </p>
+
+        <a class="text-blue-600 hover:underline"
+           href="https://github.com/Nanoyayay" target="_blank">
+            github.com/Nanoyayay →
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
